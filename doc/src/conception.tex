@@ -16,3 +16,30 @@ La dernière solution est un bon compromis, car c'est une solution de %
 construction modulaire à petit prix (15\euro les 2,5m x 25mm). Les jonctions %
 se font avec des L et des T en PVC. Si ce n'est pas assez rigide, je %
 pourrais encore ajouter des équerres métaliques.
+\subsection{L'électronique}
+\subsubsection{Spécification}
+L'électronique de commande doit respecter les spécifications suivantes: %
+\begin{itemize}%
+\item{Elle devra piloter 5 axes (1 X-axis, 1 Y-axis, 2 Z-axis, 1 extrudeur)} %
+\item{Elle se connectera à un ordinateur via le port USB} %
+\item{Elle supportera une carte SD pour l'imprimante soit autonaume lors de %
+l'impression} %
+\item{Elle saura piloter des moteurs pas à pas bipolaires}
+\item{Elle intégrera les différents capteurs (fin de course, températere de %
+l'extrudeur)}
+\item{Elle saura piloter le partie chauffante de l'extrudeur} %
+\item{Elle ne sera pas propriétaire} %
+\end{itemize} %
+\subsubsection{La Smoothieboard}
+Toujours, pour des questions de budget, j'ai écarté la solution Smoothie %
+(http://smoothieware.org/smoothieboard). Il faut compter 125\euro{} pour une %
+carte 5 axes.
+\subsection{Arduino}
+La solution Arduino consiste à utiliser la version Mega et y brancher une carte %
+de commande de moteur. Je suis donc parti sur la configuration suivante: %
+\begin{itemize}%
+\item{Freeduino 2650 Mega (un clone de l'Arduino, mais en moins cher): 19\euro}%
+\item{RAMPS (une carte de commande de moteur; la plus utilisée par les firmwares %
+proposés): 14\euro}%
+\item{5 modules A4988 (commande de moteur pas à pas): 5\euro{} chacun}
+\end{itemize}%
