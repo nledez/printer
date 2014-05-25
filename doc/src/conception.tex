@@ -43,3 +43,10 @@ de commande de moteur. Je suis donc parti sur la configuration suivante: %
 proposés): 14\euro}%
 \item{5 modules A4988 (commande de moteur pas à pas): 5\euro{} chacun}
 \end{itemize}%
+%
+\subsection{Liste du matériel}
+\csvreader[tabular=|l|l|l|r|,
+    table head=\hline & Description & Qte & Prix\\\hline,
+    late after line=\\\hline]%
+{bom.csv}{Description=\Description,Qte=\Qte,Prix=\Prix}%
+{\thecsvrow & \Description & \Qte & \Prix}%
