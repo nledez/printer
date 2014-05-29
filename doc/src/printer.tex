@@ -1,21 +1,35 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{eurosym}
-\usepackage{csvsimple}
-\usepackage{graphicx}
-
-\author{C. Meichel}
-\title{3D-Printer}
-\date{\today}
-
-\begin{document}
-\maketitle
-
-\input{presentation}
-\input{conception}
-\input{mise_en_oeuvre}
-
-\end{document}
+\documentclass[a4paper,12pt]{article}%
+\usepackage[utf8]{inputenc}%
+\usepackage[francais]{babel}%
+\usepackage[T1]{fontenc}%
+\usepackage{eurosym}%
+\usepackage{csvsimple}%
+\usepackage{graphicx}%
+\usepackage[pdftex,%
+    pdfauthor={C. Meichel},%
+    pdftitle={3D-Printer},%
+    pdfsubject={Conception d'une imprimante 3D},%
+    pdfkeywords={reprap,printer},%
+    pdfproducer={Latex},%
+    pdfcreator={pdflatex}]{hyperref}%
+\usepackage{float}%
+%\floatstyle{boxed}%
+\restylefloat{figure}%
+%
+\author{C. Meichel}%
+\title{3D-Printer}%
+\date{\today}%
+%
+\begin{document}%
+\maketitle%
+\includegraphics[width=10cm]{img/frame.jpg}%
+\clearpage%
+\tableofcontents%
+\clearpage%
+%
+\input{presentation}%
+\input{conception}%
+\input{mise_en_oeuvre}%
+%
+\end{document}%
 
